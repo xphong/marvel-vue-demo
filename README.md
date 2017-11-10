@@ -1,4 +1,4 @@
-# marvel-vue
+# marvel-vue-demo
 
 To start:
 
