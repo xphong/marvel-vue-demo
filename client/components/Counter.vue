@@ -3,18 +3,23 @@
     <div class="counter">
       {{ count }}
     </div>
-    <button @click="$store.commit('INCREMENT')">Increment</button>
-    <button @click="$store.commit('DECREMENT')">Decrement</button>
-    <button @click="$store.dispatch('incrementAsync')">Increment Async</button>
+    <button @click="this.increment">Increment</button>
+    <button @click="this.decrement">Decrement</button>
+    <button @click="this.incrementAsync">Increment Async</button>
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 
 export default {
   computed: mapState([
     'count'
+  ]),
+  methods: mapActions([
+    'incrementAsync',
+    'increment',
+    'decrement'
   ])
 }
 </script>

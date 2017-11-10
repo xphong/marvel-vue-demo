@@ -21,6 +21,12 @@ const actions = {
     setTimeout(() => {
       commit('INCREMENT')
     }, 200)
+  },
+  increment ({ commit }) {
+    commit('INCREMENT')
+  },
+  decrement ({ commit }) {
+    commit('DECREMENT')
   }
 }
 
