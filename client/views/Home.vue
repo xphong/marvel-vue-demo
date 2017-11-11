@@ -6,13 +6,11 @@
 </template>
 
 <script>
-import Counter from 'components/Counter'
 import SearchCharacterForm from 'components/SearchCharacterForm'
 import CharactersList from 'components/CharactersList'
 
 export default {
   components: {
-    Counter,
     SearchCharacterForm,
     CharactersList
   }
