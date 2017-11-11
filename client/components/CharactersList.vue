@@ -1,5 +1,5 @@
 <template>
-  <div v-If="!!characters.length" class="ui characters-list cards">
+  <div v-if="!!characters.length" class="ui characters-list cards">
     <div v-for="character in characters" :key="character.name" class="ui card fadeIn-animation">
       <div class="image">
           <img :src="character.image" />
@@ -32,3 +32,32 @@ export default {
   ])
 }
 </script>
+
+<style>
+.characters-list.cards {
+  margin-top: 2em;
+  justify-content: center;
+}
+
+.characters-list.cards .image {
+    position: relative;
+    width: 100%;
+    height: 246px;
+    overflow: hidden;
+}
+
+.characters-list.cards .image img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.ui.card, .ui.cards > .card {
+  width: 364px;
+}
+</style>
