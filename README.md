@@ -1,5 +1,7 @@
 # marvel-vue-demo
 
+* Requires [marvel-powerlevels-api](https://github.com/xphong/marvel-powerlevels-api) to be running
+
 To start:
 
 ```bash
