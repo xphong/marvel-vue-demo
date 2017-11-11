@@ -1,11 +1,9 @@
 <template>
   <div class="counter-wrapper">
     <div class="counter">
-      {{ count }}
+      {{ data }}
     </div>
-    <button @click="this.increment">Increment</button>
-    <button @click="this.decrement">Decrement</button>
-    <button @click="this.incrementAsync">Increment Async</button>
+    <button @click="fetchCharacters('wolverine')">Fetch</button>
   </div>
 </template>
 
@@ -14,12 +12,10 @@ import { mapState, mapActions } from 'vuex'
 
 export default {
   computed: mapState([
-    'count'
+    'data'
   ]),
   methods: mapActions([
-    'incrementAsync',
-    'increment',
-    'decrement'
+    'fetchCharacters'
   ])
 }
 </script>
