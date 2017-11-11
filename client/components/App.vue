@@ -5,23 +5,17 @@
 </template>
 
 <style>
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
 body {
-  margin: 0;
-  font-size: 2rem;
-  font-family: -apple-system, BlinkMacSystemFont,
-               'avenir next', avenir,
-               helvetica, 'helvetica neue',
-               Ubuntu,
-               'segoe ui', arial,
-               sans-serif;
+  background-color: #f1f2f0;
+  color: #35342f;
+  display: flex;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
 }
+
 .page {
-  text-align: center;
-  /* nesting for the need to test postcss */
-  code {
-    background-color: #f0f0f0;
-    padding: 3px 5px;
-    border-radius: 2px;
-  }
+  margin: 80px auto;
 }
 </style>
