@@ -1,5 +1,7 @@
 # marvel-vue-demo
 
+![](https://cdn-images-1.medium.com/max/1600/1*JtzSleyt8MWcfm_r85Bpaw.gif)
+
 * Requires [marvel-powerlevels-api](https://github.com/xphong/marvel-powerlevels-api) to be running
 
 To start:
