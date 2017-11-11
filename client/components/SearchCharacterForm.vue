@@ -1,7 +1,7 @@
 <template>
   <div class="search-character__form">
     <form @submit.prevent
-      @submit="handleSearch($event)">
+      @submit="handleSearch()">
 
       <div class="ui action input">
         <input v-model="name"
@@ -25,8 +25,8 @@ export default {
     }
   },
   methods: {
-    handleSearch (event) {
-      console.log(this.name)
+    handleSearch () {
+      this.$store.dispatch('FETCH_CHARACTERS', this.name);
     }
   }
 }

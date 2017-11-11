@@ -15,7 +15,7 @@ const mutations = {
 }
 
 const actions = {
-  async fetchCharacters ({ commit }, name) {
+  async FETCH_CHARACTERS ({ commit }, name) {
     const url = `http://localhost:8080/api/characters?limit=12&name=${name}`
     const { data } = await axios.get(url)
     commit('RECEIVE_CHARACTERS', { characters: data.results })
