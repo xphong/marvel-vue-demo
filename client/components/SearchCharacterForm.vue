@@ -1,7 +1,6 @@
 <template>
   <div class="search-character__form">
-    <form @submit.prevent
-      @submit="handleSearch()">
+    <form @submit.prevent="handleSearch()">
 
       <div class="ui action input">
         <input v-model="name"
