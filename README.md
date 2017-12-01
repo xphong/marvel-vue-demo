@@ -6,7 +6,7 @@
 
 ## API Calls
 
-For the API calls, you will need to have [marvel-powerlevels-api](https://github.com/xphong/marvel-powerlevels-api) to  running or call the Marvel API directly `http://gateway.marvel.com/v1/public/characters?limit=12&nameStartsWith=${character}&apikey=${key}`
+For the API calls, you will need to have [marvel-powerlevels-api](https://github.com/xphong/marvel-powerlevels-api) to be running or you can call the Marvel API directly `http://gateway.marvel.com/v1/public/characters?limit=12&nameStartsWith=${character}&apikey=${key}`
 
 ## Quickstart
 
